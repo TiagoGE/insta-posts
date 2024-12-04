@@ -37,7 +37,7 @@ https://backend-insta-bytes-246822425102.northamerica-northeast1.run.app/_id.png
 
 To test the API locally or interact with it, follow these steps:
 
-INTERACT IN CLOUD
+INTERACT WITH CLOUD
 1. Download only the frontend folder.
 
 Frontend
@@ -46,6 +46,9 @@ Running the Frontend
 In the project root, navigate to the frontend folder.
 Install dependencies:
 'npm install'
+Go to ".env" file:
+Uncomment the line 1: # API_URL = https://backend-insta-bytes-246822425102.northamerica-northeast1.run.app/posts
+And comment the line 2: API_URL = http://localhost:3000/posts
 Run frontend:
 npm run dev
 Open your web browser and navigate to http://localhost:8000 to interact with the frontend.
