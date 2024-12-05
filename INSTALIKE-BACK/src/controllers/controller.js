@@ -46,9 +46,9 @@ export async function uploadImage(req, res) {
 export async function updatePost(req, res) {
     const id = req.params.id;
     // Determine the URL dynamically
-    const baseUrl = req.protocol + '://' + req.get('host');
-    console.log(baseUrl);
-    // const baseUrl = `https://backend-insta-bytes-246822425102.northamerica-northeast1.run.app/${id}.png`;
+    // const baseUrl = req.protocol + '://' + req.get('host');
+    // console.log(baseUrl);
+    const baseUrl = `https://backend-api-246822425102.us-west1.run.app`;
     
     try {
         const imgBuffer = fs.readFileSync(`uploads/${id}.png`)
