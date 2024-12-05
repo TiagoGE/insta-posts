@@ -12,19 +12,19 @@ The backend is a RESTful API built using [Node.js/Express] and deployed to Googl
 API Endpoint
 The backend API is deployed to Google Cloud and can be accessed at the following URL:
 
-https://backend-insta-bytes-246822425102.northamerica-northeast1.run.app/posts
+https://backend-api-246822425102.us-west1.run.app/posts
 
 How It Works
   
   1. Upload an Image:
 Use Postman or another API tool to send a POST request to:
-https://backend-insta-bytes-246822425102.northamerica-northeast1.run.app/upload
+https://backend-api-246822425102.us-west1.run.app/posts/upload
 In the request body, include the image URL with the key url.
 
   2. Generate Description:
 Once the image is uploaded, copy the generated image ID.
 Send a PUT request to:
-https://backend-insta-bytes-246822425102.northamerica-northeast1.run.app/upload/_id
+https://backend-api-246822425102.us-west1.run.app/posts/upload/_id
 Replace _id with the image ID you just copied.
 Optionally, add an "alt" value to provide alt text for when the image is not loaded.
 
@@ -47,7 +47,7 @@ In the project root, navigate to the frontend folder.
 Install dependencies:
 'npm install'
 Go to ".env" file:
-Uncomment the line 1: # API_URL = https://backend-insta-bytes-246822425102.northamerica-northeast1.run.app/posts
+Uncomment the line 1: # API_URL = https://backend-api-246822425102.us-west1.run.app/posts/posts
 And comment the line 2: API_URL = http://localhost:3000/posts
 Run frontend:
 npm run dev
